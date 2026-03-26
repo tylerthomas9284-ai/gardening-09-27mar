@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nature Gardening for professional gardening services in Texas. Call +1-805-294-6688 or email help@naturegardening.site for a free quote.">
+    <title>Contact Us - Nature Gardening | Get Your Free Gardening Quote</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+                <span>Nature Gardening</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">☰</button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><button onclick="openModal('leadModal')" class="btn btn-primary">Get Quote</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <h1>Contact Us</h1>
+        <p>Get in touch with our team for all your gardening needs</p>
+    </section>
+
+    <!-- Quick Contact Methods -->
+    <section class="section section-gray">
+        <div class="container">
+            <div class="grid grid-cols-3">
+                <div class="card">
+                    <div class="card-content text-center">
+                        <div class="contact-card-icon" style="margin: 0 auto;">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Call Us</h3>
+                        <p style="color: var(--color-gray-600); margin-bottom: 1rem;">Available 24/7</p>
+                        <a href="tel:+18052946688" class="text-lg font-semibold" style="color: var(--color-green-600);">+1-805-294-6688</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content text-center">
+                        <div class="contact-card-icon" style="margin: 0 auto;">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Email Us</h3>
+                        <p style="color: var(--color-gray-600); margin-bottom: 1rem;">Response within 24 hours</p>
+                        <a href="mailto:help@naturegardening.site" class="text-lg font-semibold" style="color: var(--color-green-600);">help@naturegardening.site</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content text-center">
+                        <div class="contact-card-icon" style="margin: 0 auto;">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Live Chat</h3>
+                        <p style="color: var(--color-gray-600); margin-bottom: 1rem;">Chat with our team</p>
+                        <a href="#" class="text-lg font-semibold" style="color: var(--color-green-600);">Start Chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-2">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <p style="color: var(--color-gray-600); margin-bottom: 2rem;">
+                        Fill out the form below and our team will get back to you within 24 hours. For urgent matters, please call us directly.
+                    </p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full Name *</label>
+                            <input type="text" id="fullName" class="form-input" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" class="form-input" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="phone" class="form-input" required placeholder="+1-555-123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Needed</label>
+                            <input type="text" id="service" class="form-input" placeholder="e.g., Lawn Care, Garden Maintenance">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" class="form-textarea" required placeholder="Tell us about your gardening needs..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="consent" class="checkbox" required>
+                            <label for="consent" style="font-size: 0.875rem; line-height: 1.4;">
+                                I agree to the <a href="privacy.html" target="_blank" style="color: var(--color-green-600); text-decoration: underline;">Privacy Policy</a> and 
+                                <a href="terms.html" target="_blank" style="color: var(--color-green-600); text-decoration: underline;">Terms & Conditions</a> and consent to being contacted regarding my request. *
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.5rem; font-size: 1.125rem;">Request Service</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+                    
+                    <!-- Image -->
+                    <div class="mb-8 rounded-lg shadow-lg" style="overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1755245428873-7c5387b848ad?w=600&h=300&fit=crop" alt="Customer service" style="width: 100%; height: 16rem; object-fit: cover;">
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <!-- Address -->
+                        <div class="card">
+                            <div class="card-content" style="display: flex; gap: 1rem;">
+                                <div class="contact-card-icon" style="flex-shrink: 0;">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Address</h3>
+                                    <p style="color: var(--color-gray-600);">
+                                        Nature Gardening<br>
+                                        10221 Deserts St Ste 212<br>
+                                        Atmore, TX 78216<br>
+                                        United States
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="card">
+                            <div class="card-content" style="display: flex; gap: 1rem;">
+                                <div class="contact-card-icon" style="flex-shrink: 0;">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Phone</h3>
+                                    <a href="tel:+18052946688" class="text-lg" style="color: var(--color-green-600); text-decoration: underline;">+1-805-294-6688</a>
+                                    <p style="color: var(--color-gray-600); font-size: 0.875rem; margin-top: 0.25rem;">24/7 Support Available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="card">
+                            <div class="card-content" style="display: flex; gap: 1rem;">
+                                <div class="contact-card-icon" style="flex-shrink: 0;">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Email</h3>
+                                    <a href="mailto:help@naturegardening.site" class="text-lg" style="color: var(--color-green-600); text-decoration: underline;">help@naturegardening.site</a>
+                                    <p style="color: var(--color-gray-600); font-size: 0.875rem; margin-top: 0.25rem;">Response within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="card">
+                            <div class="card-content" style="display: flex; gap: 1rem;">
+                                <div class="contact-card-icon" style="flex-shrink: 0;">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg mb-1">Business Hours</h3>
+                                    <p style="color: var(--color-gray-600);">
+                                        Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                        Saturday: 9:00 AM - 4:00 PM<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="map-container mt-8">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3468.7!2d-98.5!3d29.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDMwJzAwLjAiTiA5OMKwMzAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Nature Gardening Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Response Features -->
+    <section class="section section-green">
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 3rem; flex-wrap: wrap;">
+                <div class="text-center">
+                    <svg style="width: 3rem; height: 3rem; color: var(--color-green-600); margin: 0 auto 0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">24/7 Support</h3>
+                    <p style="color: var(--color-gray-600);">Always here to help you</p>
+                </div>
+                <div class="text-center">
+                    <svg style="width: 3rem; height: 3rem; color: var(--color-green-600); margin: 0 auto 0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Fast Response</h3>
+                    <p style="color: var(--color-gray-600);">Within 24 hours guaranteed</p>
+                </div>
+                <div class="text-center">
+                    <svg style="width: 3rem; height: 3rem; color: var(--color-green-600); margin: 0 auto 0.75rem;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Multiple Channels</h3>
+                    <p style="color: var(--color-gray-600);">Call, email, or chat with us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h3>Nature Gardening</h3>
+                <p style="color: var(--color-gray-100); margin-top: 1rem;">Professional gardening and lawn care services for homes and businesses across Texas.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li>10221 Deserts St Ste 212</li>
+                    <li>Atmore, TX 78216</li>
+                    <li><a href="tel:+18052946688">+1-805-294-6688</a></li>
+                    <li><a href="mailto:help@naturegardening.site">help@naturegardening.site</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nature Gardening. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Lead Modal -->
+    <div id="leadModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Request a Free Quote</h2>
+                <button onclick="closeModal('leadModal')" class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label for="leadFullName" class="form-label">Full Name *</label>
+                        <input type="text" id="leadFullName" class="form-input" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="leadEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="leadEmail" class="form-input" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="leadPhone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="leadPhone" class="form-input" required placeholder="+1-555-123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="leadService" class="form-label">Service Needed</label>
+                        <input type="text" id="leadService" class="form-input" placeholder="e.g., Lawn Care">
+                    </div>
+                    <div class="form-group">
+                        <label for="leadMessage" class="form-label">Message</label>
+                        <textarea id="leadMessage" class="form-textarea" placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="leadConsent" class="checkbox" required>
+                        <label for="leadConsent" style="font-size: 0.875rem;">
+                            I agree to the <a href="privacy.html" target="_blank" style="color: var(--color-green-600);">Privacy Policy</a> and 
+                            <a href="terms.html" target="_blank" style="color: var(--color-green-600);">Terms & Conditions</a> and consent to being contacted. *
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Request Free Quote</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookieBanner" class="cookie-banner">
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <strong>Cookie Consent</strong>
+                <p style="margin-top: 0.5rem; color: var(--color-gray-600);">
+                    We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept", you consent to our use of cookies. 
+                    <a href="cookie-policy.html" style="color: var(--color-green-600);">Learn more</a>
+                </p>
+            </div>
+            <div class="cookie-banner-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accept All</button>
+                <button id="declineCookies" class="btn btn-outline">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
